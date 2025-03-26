@@ -41,27 +41,27 @@ const ContactSection = () => {
           <div>
             <div className="flex items-center justify-center gap-2">
               <IoLocation size={30} className="ml-2 text-powerblue-light" />
-              <p className="text-xs font-normal md:text-base xl:text-lg">
+              <p className="text-lg font-normal md:text-base xl:text-lg">
                 {CompanyInfo.address}
               </p>
             </div>
 
             <div className="flex items-center justify-center gap-2 ">
-              <p className="text-xs font-normal md:text-base xl:text-lg">
+              <p className="text-lg font-normal md:text-base xl:text-lg">
                 Atendemos a toda Estrela/RS e demais cidades da região.
               </p>
             </div>
 
             <div className="flex items-center justify-center gap-2">
               <IoCall size={30} className="ml-2 text-powerblue-light" />
-              <p className="text-xs font-normal md:text-base xl:text-lg">
+              <p className="text-lg font-normal md:text-base xl:text-lg">
               {CompanyInfo.phone}
               </p>
             </div>
 
             <div className="flex items-center justify-center gap-2">
               <IoMail size={30} className="ml-2 text-powerblue-light" />
-              <p className="text-xs font-normal md:text-base xl:text-lg">
+              <p className="text-lg font-normal md:text-base xl:text-lg">
               {CompanyInfo.email}
               </p>
             </div>
