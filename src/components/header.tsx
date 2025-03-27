@@ -26,10 +26,6 @@ const Header = () => {
       href: "#HowHeWork",
     },
     {
-      title: "Como Trabalhamos",
-      href: "#HowHeWork",
-    },
-    {
       title: "Serviços",
       href: "#Services",
     },
@@ -99,6 +95,7 @@ const Header = () => {
               variant="flat"
               isIconOnly
               target="_blank"
+              className="rounded-full"
               startContent={
                 <FaInstagram
                   size={40}
@@ -116,6 +113,7 @@ const Header = () => {
               variant="flat"
               isIconOnly
               target="_blank"
+              className="rounded-full"
               startContent={
                 <FaWhatsapp
                   size={40}
@@ -126,7 +124,7 @@ const Header = () => {
           </NavbarItem>
         </div>
       </NavbarContent>
-      <NavbarMenu className="pt-10">
+      <NavbarMenu className="pt-20">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={index}>
             <Link className="w-full" href={item.href} size="lg">

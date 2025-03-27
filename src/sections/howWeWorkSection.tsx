@@ -58,7 +58,7 @@ const HowWeWorkSection = () => {
             <div className="grid grid-cols-2 gap-6" >
               {workSteps.map((step) => (
                 <div key={step.id} className="relative">
-                  <div className="absolute -top-3 -left-3 bg-powerblue-light text-white w-12 h-12 flex items-center justify-center rounded-lg">
+                  <div className="absolute -top-5 -left-5 bg-powerblue-light text-white w-12 h-12 flex items-center justify-center rounded-lg">
                     <span className="font-bold">{step.id}</span>
                   </div>
                   <div className="bg-powerblue-dark p-4 sm:p-6 pt-10 rounded-lg shadow-sm h-full">
