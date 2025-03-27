@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../animation/variants";
 import { useInView } from "react-intersection-observer";
 
-
 const services: { title: string; text: string }[] = [
   {
     title: "LOCALIZAÇÃO DE VAZAMENTOS",
@@ -39,7 +38,7 @@ const ServicesSection = () => {
 
   return (
     <section
-      className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-5 lg:flex-row lg:py-16 xl:max-w-[1380px]"
+      className="mx-auto w-full overflow-hidden px-4"
       id="Services"
       ref={ref}
     >
@@ -50,7 +49,7 @@ const ServicesSection = () => {
         exit="hidden"
         className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-5 lg:flex-row lg:py-16 xl:max-w-[1380px]"
       >
-        <div className="flex w-full flex-col items-center justify-center gap-6 p-5 md:items-start md:justify-start">
+        <div className="flex w-full flex-col items-center justify-center gap-6 px-1 py-3 md:p-5 md:items-start md:justify-start">
           <div className="text-center md:text-start">
             <span className="text-xl font-light text-powerblue-light">
               SERVIÇOS
@@ -60,10 +59,10 @@ const ServicesSection = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid w-full grid-cols-1 gap-4 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <div
-                className="flex flex-col items-start justify-start rounded-bl-2xl rounded-tr-2xl bg-powerblue-dark p-5 text-white"
+                className="flex flex-col items-start justify-start rounded-bl-2xl rounded-tr-2xl bg-powerblue-dark p-4 md:p-5 text-white"
                 key={index}
               >
                 <h4 className="mb-2 font-bold">{service.title}</h4>
