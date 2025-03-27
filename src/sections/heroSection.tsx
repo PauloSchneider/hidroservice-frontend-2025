@@ -17,7 +17,7 @@ const HeroSection = () => {
   return (
     <section
       ref={ref}
-      className="relative mx-auto flex w-full items-center justify-center bg-powerblue-dark bg-[url('/hero-background.png')] bg-cover bg-center bg-no-repeat py-10 3xl:max-w-[1580px] 3xl:rounded-b-2xl" 
+      className="pt-32 relative mx-auto flex w-full items-center justify-center bg-powerblue-dark bg-[url('/hero-background.png')] bg-cover bg-center bg-no-repeat py-10 3xl:max-w-[1580px] 3xl:rounded-b-2xl" 
       id="Home"
     >
       <motion.div
