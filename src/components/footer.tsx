@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-center md:items-center md:flex-grow">
             <p className="px-5 text-center text-sm text-white">2024 - {currentYear} {CompanyInfo.company}</p>
             <h3 className="text-base font-medium uppercase">Atendimento</h3>
-            <p className="items-center justify-center">Segunda a sexta das 08:00h às 12:00h e das 13:30h às 18:00h</p>
+            <p>Segunda a sexta-feira, das 08:00h às 12:00h e 13:30h às 18:00h</p>
             <p>Sábado das 08:00h às 12:00h</p>
             <div className="flex flex-col items-center justify-center gap-2 md:flex-row">
               <div className="flex items-center justify-center gap-2">

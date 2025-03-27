@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-powerblue-dark bg-opacity-30 py-2 h-32"
+      className="bg-powerblue-dark bg-opacity-30 py-2 h-32 fixed"
     >
       <NavbarContent justify="start" className="pr-16">
         <NavbarMenuToggle
@@ -45,11 +45,11 @@ const Header = () => {
           className="md:hidden"
         />
         <Link href="#" className="ml-6">
-          <NavbarBrand>
+          <NavbarBrand className="flex items-center justify-center">
             <Image
               src={Logo}
               alt="HIDROSERVICE"
-              sizes="100vw"
+              sizes="100vw" 
               height={0}
               width={0}
               className="h-auto w-auto"
