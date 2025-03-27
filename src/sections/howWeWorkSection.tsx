@@ -63,7 +63,7 @@ const HowWeWorkSection = () => {
                   </div>
                   <div className="bg-powerblue-dark p-4 sm:p-6 pt-10 rounded-lg shadow-sm h-full">
                     <h3 className="text-xl font-bold mb-4 text-white">{step.title}</h3>
-                    <p className="text-white">{step.description}</p>
+                    <p className="text-lg text-white">{step.description}</p>
                   </div>
                 </div>
               ))}

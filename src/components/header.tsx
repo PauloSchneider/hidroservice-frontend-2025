@@ -34,18 +34,17 @@ const Header = () => {
       href: "#Contact",
     },
   ];
-
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
       className="bg-powerblue-dark bg-opacity-30 py-2 h-32"
     >
-      <NavbarContent justify="start">
+      <NavbarContent justify="start" className="pr-16">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="md:hidden"
         />
-        <Link href="#">
+        <Link href="#" className="ml-6">
           <NavbarBrand>
             <Image
               src={Logo}
@@ -59,10 +58,10 @@ const Header = () => {
         </Link>
       </NavbarContent>
 
-      <NavbarContent className="hidden gap-4 ml-10 md:flex" justify="center">
-        <NavbarItem>
+      <NavbarContent className="hidden md:flex justify-center flex-1 gap-8 ml-16" justify="center">
+        <NavbarItem> 
           <Link
-            className="text-white transition-all duration-300 hover:font-bold"
+            className="text-white text-lg font-medium transition-all duration-300 hover:font-bold"
             href="#HowWeWork"
           >
             Como Trabalhamos
@@ -70,7 +69,7 @@ const Header = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-white transition-all duration-300 hover:font-bold"
+            className="text-white text-lg font-medium transition-all duration-300 hover:font-bold"
             href="#Services"
           >
             Serviços
@@ -78,7 +77,7 @@ const Header = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-white transition-all duration-300 hover:font-bold"
+            className="text-white text-lg font-medium transition-all duration-300 hover:font-bold"
             href="#Contacts"
           >
             Contatos

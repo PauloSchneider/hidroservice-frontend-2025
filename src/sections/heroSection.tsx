@@ -32,12 +32,12 @@ const HeroSection = () => {
               <h1 className="text-3xl font-bold md:text-5xl 2xl:text-6xl">
                 A MELHOR ESCOLHA PARA O SEU IMÓVEL
               </h1>
-              <p className="text-md font-normal md:text-lg">
+              <p className="text-lg font-normal md:text-lg">
                 Vazamentos, entupimentos, problemas hidráulicos? Conte com a nossa equipe especializada.
               </p>
               <a href={CompanySocialNetwork.whatsapp} target="_blank" className="h-14 w-full">
                 <Button
-                  className="h-14 w-full text-base font-medium text-white"
+                  className="text-lg h-14 w-full font-medium text-white"
                   color="primary"
                   startContent={<IoLogoWhatsapp size={30} className="ml-2" />}
                   

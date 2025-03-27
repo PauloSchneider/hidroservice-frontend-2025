@@ -51,10 +51,7 @@ const ServicesSection = () => {
       >
         <div className="flex w-full flex-col items-center justify-center gap-6 px-1 py-3 md:p-5 md:items-start md:justify-start">
           <div className="text-center md:text-start">
-            <span className="text-xl font-light text-powerblue-light">
-              SERVIÇOS
-            </span>
-            <h2 className="text-3xl font-bold xl:text-4xl">
+            <h2 className="text-5xl font-bold text-gray-900">
               Serviços de primeira qualidade para seu imóvel!
             </h2>
           </div>
@@ -65,8 +62,8 @@ const ServicesSection = () => {
                 className="flex flex-col items-start justify-start rounded-bl-2xl rounded-tr-2xl bg-powerblue-dark p-4 md:p-5 text-white"
                 key={index}
               >
-                <h4 className="mb-2 font-bold">{service.title}</h4>
-                <p className="text-sm font-normal" dangerouslySetInnerHTML={{ __html: service.text }}></p>
+                <h4 className="text-xl font-bold mb-4 text-white">{service.title}</h4>
+                <p className="text-lg text-white" dangerouslySetInnerHTML={{ __html: service.text }}></p>
               </div>
             ))}
           </div>

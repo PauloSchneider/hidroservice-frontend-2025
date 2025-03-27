@@ -32,7 +32,7 @@ const ContactSection = () => {
       >
         <div className="flex w-full flex-col gap-4 p-5 text-center lg:w-1/2 bg-gray-100 rounded-lg shadow-sm h-full">
           <div className="flex flex-col items-center justify-center gap-1">
-            <span className="text-xl font-light uppercase text-powerblue-light">
+            <span className="text-xl font-bold uppercase text-powerblue-light">
               Localização e Contato
             </span>
             <h2 className="text-3xl font-bold xl:text-5xl">{CompanyInfo.company}</h2>
@@ -70,10 +70,9 @@ const ContactSection = () => {
           <div className="flex flex-col items-center justify-center gap-2">
             <a href={CompanySocialNetwork.whatsapp} target="_blank" className="h-14 w-full">
               <Button
-                className="h-14 w-full text-base font-medium text-white"
+                className="h-14 w-full text-lg font-medium text-white"
                 color="primary"
                 startContent={<IoLogoWhatsapp size={30} className="ml-2" />}
-                
               >
                 Mande um WhatsApp
               </Button>
