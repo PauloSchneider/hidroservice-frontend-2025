@@ -29,7 +29,7 @@ const HowWeWorkSection = () => {
     {
       id: '04',
       title: 'Execução',
-      description: 'Executamos o(s) serviço(s) com qualidade, eficiência e garantia.'
+      description: 'Executamo(s) o(s) serviço(s) com qualidade, eficiência e garantia.'
     }
   ];
 
