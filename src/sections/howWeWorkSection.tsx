@@ -61,7 +61,7 @@ const HowWeWorkSection = () => {
                   <div className="absolute -top-3 -left-3 bg-powerblue-light text-white w-12 h-12 flex items-center justify-center rounded-lg">
                     <span className="font-bold">{step.id}</span>
                   </div>
-                  <div className="bg-powerblue-dark p-6 pt-10 rounded-lg shadow-sm h-full">
+                  <div className="bg-powerblue-dark p-4 sm:p-6 pt-10 rounded-lg shadow-sm h-full">
                     <h3 className="text-xl font-bold mb-4 text-white">{step.title}</h3>
                     <p className="text-white">{step.description}</p>
                   </div>
