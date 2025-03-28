@@ -38,7 +38,7 @@ const ServicesSection = () => {
 
   return (
     <section
-      className="mx-auto w-full overflow-hidden px-4"
+      className="mx-auto w-full overflow-hidden p-20"
       id="Services"
       ref={ref}
     >
