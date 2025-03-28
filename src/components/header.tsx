@@ -23,7 +23,7 @@ const Header = () => {
   const menuItems: { title: string; href: string }[] = [
     {
       title: "Como Trabalhamos",
-      href: "#HowHeWork",
+      href: "#HowWeWork",
     },
     {
       title: "Serviços",
@@ -31,7 +31,7 @@ const Header = () => {
     },
     {
       title: "Contato",
-      href: "#Contact",
+      href: "#Contacts",
     },
   ];
   return (
@@ -59,30 +59,13 @@ const Header = () => {
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex justify-center flex-1 gap-8 ml-16" justify="center">
-        <NavbarItem> 
-          <Link
-            className="text-white text-lg font-medium transition-all duration-300 hover:font-bold"
-            href="#HowWeWork"
-          >
-            Como Trabalhamos
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className="text-white text-lg font-medium transition-all duration-300 hover:font-bold"
-            href="#Services"
-          >
-            Serviços
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className="text-white text-lg font-medium transition-all duration-300 hover:font-bold"
-            href="#Contacts"
-          >
-            Contatos
-          </Link>
-        </NavbarItem>
+      {menuItems.map((item, index) => (
+          <NavbarItem key={index}>
+            <Link className="text-white text-lg font-medium transition-all duration-300 hover:font-bold" href={item.href} size="lg">
+              {item.title}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
         <div className="flex cursor-pointer items-center justify-center gap-2">
