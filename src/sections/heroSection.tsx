@@ -6,7 +6,7 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation/variants";
 import { useInView } from "react-intersection-observer";
-import { CompanySocialNetwork } from "@/app/globals";
+import { CompanyInfo, CompanySocialNetwork } from "@/app/globals";
 
 import HeroSVG from "@/app/heroSVG";
 
@@ -38,11 +38,11 @@ const HeroSection = () => {
               <a href={CompanySocialNetwork.whatsapp} target="_blank" className="h-14 w-full">
                 <Button
                   className="text-lg h-14 w-full font-medium text-white"
-                  color="primary"
+                  color="success"
                   startContent={<IoLogoWhatsapp size={30} className="ml-2" />}
                   
                 >
-                  Mande um WhatsApp
+                  {CompanyInfo.phone}
                 </Button>
               </a>
             </div>
